@@ -1,0 +1,29 @@
+
+
+
+<section class="d-flex justify-content-center m-3">
+    <div class="card text-dark bg-light mb-3 " style="max-width: 18rem;">
+        <div class="card-header">Confirm Transfer </div>
+        <div class="card-body">
+          <label>From:</label>
+          <p>{{firstNameOfSender}} {{secondNameOfSender}} {{thirdNameOfSender}} {{senderAccountNumber}} </p>
+          <label>To:</label>
+          <p>
+            {{receiverAccountNameGet}} {{receiverAccountGet}}</p>
+          <label>Bank:</label>
+          <p>{{nameOfBank }}</p>
+          <label >Amount:</label>
+          <p>{{amountToBeSent}}</p>
+          <label>Reason:</label>
+          <p>{{reason}}</p>
+        </div>
+        <input type="text" class="form-control" placeholder="Enter Transaction Pin" [(ngModel)]="pin">
+        <button class="btn btn-danger" (click)="confirm()" >Confirm</button>
+
+
+      </div>
+
+</section>
+
+
+  

@@ -1,0 +1,15 @@
+.disp{
+    height: auto;
+    width: 50%;
+    outline: thin solid red;
+    margin-top: 20px;
+    /* display: flex; 
+    justify-items: center; */
+}
+.details{
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-control{
+    border-radius: 30px;
+}

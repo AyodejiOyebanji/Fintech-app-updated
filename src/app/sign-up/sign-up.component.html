@@ -1,0 +1,36 @@
+<section>
+   
+
+    <div class="whole">
+        <div class="container shadow ">
+
+        
+        <div class="side-two rounded-start text-light">
+            <h6 >Welcome to Scotia Bank</h6>
+            <img [src]="linK" alt="" style="height: 120px;width: 120px;">
+           <h1 style="font-size: 55px;">Make a</h1>
+           <h1>Dream</h1>
+                       
+        </div>
+        <div class="side-one rounded-end ">
+            
+            
+            <input type="text"  class="form-control m-1 "  placeholder="Surname" [(ngModel)]="surname">
+        <input type="text"  class="form-control m-1"placeholder="First Name" [(ngModel)]="fName">
+        <input type="text" class="form-control m-1" placeholder="Last Name" [(ngModel)]="lName">
+        <input type="text" class="form-control m-1" placeholder="email" [(ngModel)]="email">
+        <input type="text" class="form-control m-1" placeholder="Phone number" [(ngModel)]="phone">
+        <input type="text" class="form-control m-1" placeholder="BVN (if any)" [(ngModel)]="bvn">
+        <input type="text" class="form-control m-1" placeholder="Password" ng-minlength="10" [(ngModel)]="password">
+        <input type="text" class="form-control m-1" placeholder="Confirm Password" [(ngModel)]="cPassword">
+        <input type="text"  class="form-control m-1" placeholder="Bank Package" [(ngModel)]="bPackage">
+        <input type="text" class="form-control m-1" placeholder="Transaction pin" [(ngModel)]="cNumber">
+        <button (click)="signup()" class="log btn ">Sign Up</button>
+
+
+        </div>
+      
+    </div>
+        
+    </div>
+</section>

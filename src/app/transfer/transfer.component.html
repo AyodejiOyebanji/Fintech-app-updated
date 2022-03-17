@@ -1,0 +1,88 @@
+<section>
+    <h3 class="d-flex justify-content-center">Send Money</h3>
+   <p class="m-4 ">Select Transfer Mode</p>
+   <p>#{{balanceOfSender}}:00</p>
+  </section>
+
+<section class="">
+    <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="assets/logo.png" alt="" style="height: 120px; width: 120px;">
+                    <p>Scotia Accounts</p>
+                 
+                </div>
+              </div>
+
+
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                 <img src="assets/building-removebg-preview.png" alt="" style="height: 120px; width: 120px;">
+                 <p>Other Banks</p>
+                </div>
+              </div>
+
+          </div>
+          <div class="col d-flex justify-content-center">
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="assets/logo.png" alt="" style="height: 120px; width: 120px;">
+                    <p>Scotia Prepaid card</p>
+
+                  
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      
+      
+    </section>
+    <div class=" container disp  d-flex justify-content-center ">
+      <div>
+        <h6 class="details display-6"  >Transfer From:</h6>
+        <p>{{firstName}} {{secondName}} {{thirdName}}</p>
+       <p>{{package}} Account: {{accountNumber}}</p>
+      </div>
+                          
+    </div>
+
+
+    <div class=" container disp  d-flex justify-content-center ">
+      <div>
+        <h6 class="details display-6"  >Transfer To:</h6>
+         <input type="text" (input)="mySearch()" name="" id="" [value]="receivingEnd" class="form-control" placeholder="Account Number" [(ngModel)]="receiverAccount">
+         <p *ngIf="getReceiverName; else elseblock"  >{{getReceiverName.surname}} {{getReceiverName.fName}} {{getReceiverName.lName}}</p>
+         <ng-template #elseblock>
+           <P>Account Not Found</P>
+
+         </ng-template>
+         <input type="text" class="form-control" placeholder="amount" [(ngModel)]="amount" >
+         <input type="text" class="form-control" placeholder="Bank" [(ngModel)]="bankName">
+         <input type="text" class="form-control" placeholder="reason" [(ngModel)]="reason" >
+         <button (click)="confirm()"  class="btn btn-danger" >Confirm</button>         
+         <div>
+        
+         </div>
+         
+
+
+      </div>
+                          
+    </div>
+
+    <div>
+     
+    </div>
+    <router-outlet></router-outlet>
+
+    

@@ -1,0 +1,225 @@
+.whole{
+     background-color: rgb(70, 2, 2); 
+    height: 40vh;
+    width: 100%;
+    
+}
+.transfer{
+    height: 100px;
+    width: 100px;
+    background-color:red;
+    color: white;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    
+}
+.transfer:hover{
+    transform: scale(1.1);
+}
+.from{
+    width: 300px;
+    border: thin solid red;
+}
+
+.personal{
+    height: 150px;
+    width: 50%;
+    background-color: white;
+    margin-left: auto;
+    box-shadow: 4px 3px 3px 7px red;
+    font-size: 20px;
+    
+}
+.send{
+    height: 200px;
+    width: 20%;
+    background-color: tomato;
+}
+.send:hover{
+    transform: scale(0.8);
+
+}
+.transaction{
+    height: 140px;
+    width: 30%;
+    background-color: red;
+    margin-left: 150px ;
+
+}
+.transaction:hover{
+    transform: scale(0.8);
+
+}
+.fund{
+    height: 140px;
+    width: 22%;
+    background-color: red;
+    margin-left: 300px !important;
+    margin-top: -340px !important;
+
+
+}
+.fund:hover{
+    transform: scale(0.8);
+
+}
+
+.pay_bills {
+    height: 196px;
+    width: 10%;
+    background-color: blue;
+    margin-left: 450px;
+    margin-top: -9px;
+}
+.pay_bills:hover{
+    transform: scale(0.8);
+
+}
+
+ .loans{
+    height: 150px;
+    width: 20%;
+    background-color: teal;
+    margin-top: -340px;
+    margin-left: 620px;
+} 
+.loans:hover{
+    transform: scale(0.8);
+
+}
+
+.electricity{
+    height: 140px;
+    width: 30%;
+    background-color: tomato;
+    margin-left: 603px;
+
+    margin-top: 20px;
+}
+.electricity:hover{
+    transform: scale(0.8);
+
+}
+
+.data{
+    width: 20%;
+    height: 120px;
+    background-color: blue;
+    margin-left: 900px;
+    margin-top: -300px;
+} 
+.data:hover{
+    transform: scale(0.8);
+
+}
+
+.fixed{
+    width: 12%;
+    height: 190px;
+    background-color: red;
+    margin-left: 1190px;
+    margin-top: -130px;
+}
+.fixed:hover{
+    transform: scale(0.8);
+
+}
+
+.credit{
+    width: 270px;
+    height: 120px;
+    background-color: teal;
+    margin-left: 1040px;
+    margin-top: 10px;
+}
+.credit:hover{
+    transform: scale(0.8);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* reponsiveness starts here */
+@media screen and (max-width: 992px) {
+    .fund{
+        height: 140px;
+        width: 24%;
+        background-color: red;
+        margin-left: 140px !important;
+        margin-top: -340px !important;
+    
+    
+    }
+    .pay_bills {
+        height: 180px;
+        width: 20%;
+        background-color: blue;
+        margin-left: 200px;
+        margin-top: -9px;
+    }
+ 
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .personal{
+        font-size: 16px;
+
+    }      
+    .fund{
+        height: 140px;
+        width: 24%;
+        background-color: red;
+        margin-left: 140px !important;
+        margin-top: -340px !important;
+    
+    
+    }
+    .pay_bills {
+        height: 180px;
+        width: 20%;
+        background-color: blue;
+        margin-left: 170px;
+        margin-top: -9px;
+    }
+    
+
+
+}
