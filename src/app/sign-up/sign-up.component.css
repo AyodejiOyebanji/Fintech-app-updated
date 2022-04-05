@@ -32,7 +32,7 @@
 .side-two{
     height: 80vh;
     width: 50%;
-    /* background-color: blue; */
+
     margin-top: 80px;
      background: linear-gradient(rgb(218,0,7,0.8), rgb(213, 15, 61, 0.6)), url("../sign-up/images/template3.PNG");  
     background-size: cover;

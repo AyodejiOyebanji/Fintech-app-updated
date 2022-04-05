@@ -38,7 +38,7 @@
     <!-- modal  starts here-->
     <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Fund me 
+    Fund Account
   </button>
   
   <!-- Modal -->
@@ -76,8 +76,8 @@
     
 
         <div class="send rounded m-3 "(click)="transfer()" >
-            <img src="assets/transfer-removebg-preview.png" alt="" srcset="" style="height: 120px;width: 120px;">
-          <p class="text-light d-flex justify-content-end" >Send Money</p>
+            <!-- <img src="assets/transfer-removebg-preview.png" alt="" srcset="" style="height: 120px;width: 120px;"> -->
+          <h3 class="text-light " >Send Money</h3>
     
         </div>
     <div class="transaction rounded m-3 ">
@@ -89,8 +89,8 @@
     <h3>Bill</h3>
     </div>
 
-    <div class="pay_bills rounded  ">
-
+    <div class="pay_bills rounded  " (click)="history()">
+        <h3 class="text-light"  >History</h3>
     </div>
     
     <div class="loans rounded ">

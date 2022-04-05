@@ -1,0 +1,6 @@
+.btn{
+    font-weight: 500;
+}
+.btn:hover{
+    transform: scale(1.2);
+}

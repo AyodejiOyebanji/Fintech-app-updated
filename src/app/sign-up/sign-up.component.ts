@@ -30,6 +30,9 @@ export class SignUpComponent implements OnInit {
   public userMainAmount:any=0
   public userTransactionProcessing:Array<any>=[]
   public myHistory:Array<any>=[]
+  public mywallet:Array<any>=[]
+
+  
   
   
   
@@ -79,11 +82,11 @@ export class SignUpComponent implements OnInit {
     //   console.log(this.customerArray);
     //  // localStorage.setItem('Bank_customer',JSON.stringify(this.customerArray))
     //  // this.router.navigate(["/dashboard"])
-    let {surname,fName,lName,email,phone,bvn,password,cPassword,bPackage,cNumber,accountGen,accountBal,userWallet,userMainAmount,userTransactionProcessing,myHistory} =  this
-    accountGen=Math.floor(Math.random()*10000000000) 
+    let {surname,fName,lName,email,phone,bvn,password,cPassword,bPackage,cNumber,accountGen,accountBal,userWallet,userMainAmount,userTransactionProcessing,myHistory,mywallet} =  this
+    accountGen="963"+ Math.floor(Math.random()*1000000) 
     console.log(this.accountGen);
     
-    this._checky.pushAllMyUser({surname,fName,lName,email,phone,bvn,password,cPassword,bPackage,cNumber,accountGen,accountBal,userWallet,userMainAmount,userTransactionProcessing,myHistory})
+    this._checky.pushAllMyUser({surname,fName,lName,email,phone,bvn,password,cPassword,bPackage,cNumber,accountGen,accountBal,userWallet,userMainAmount,userTransactionProcessing,myHistory,mywallet})
      //localStorage.setItem("Bank_customer", JSON.stringify(this._checky.myUser))
 
     

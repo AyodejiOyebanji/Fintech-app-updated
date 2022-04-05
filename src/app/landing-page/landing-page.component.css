@@ -129,10 +129,11 @@
   
     #container {
       grid-area: main;
-      align-self: end;
-      justify-self:end;
+      align-self: center;
+      justify-self: center;
       /* margin-top: -90px; */
       /* transform: translateX(110px);  */
+
     
     }
     

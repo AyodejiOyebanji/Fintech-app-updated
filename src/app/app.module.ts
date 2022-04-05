@@ -14,6 +14,8 @@ import { CheckService } from './check.service';
 import { CongratComponent } from './congrat/congrat.component';
 import { TransferComponent } from './transfer/transfer.component';
 import { ChildTransferComponent } from './child-transfer/child-transfer.component';
+import { HistoryComponent } from './history/history.component';
+import { SuccessfulComponent } from './successful/successful.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ChildTransferComponent } from './child-transfer/child-transfer.componen
     DashboardComponent,
     CongratComponent,
     TransferComponent,
-    ChildTransferComponent
+    ChildTransferComponent,
+    HistoryComponent,
+    SuccessfulComponent
   ],
   imports: [
     BrowserModule,

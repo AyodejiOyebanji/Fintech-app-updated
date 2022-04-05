@@ -26,6 +26,8 @@ export class DashboardComponent implements OnInit {
   public userMain?:any
   public currentArrayUser?:any
   public amountInputed?:any
+  public refNumber:any
+  public selfFundingHistory:any
   
 
   constructor(private _checky: CheckService, private router: Router ) { }
@@ -73,6 +75,30 @@ export class DashboardComponent implements OnInit {
     if(this.amountInputed){
       this.pennyWiseUsers[this.myUserIndex].accountBal += parseFloat(this.amountInputed);
       console.log( this.pennyWiseUsers[this.myUserIndex].accountBal += parseFloat(this.amountInputed));
+
+      // initializing current time
+      var myDate = new Date;
+      var days = ["SUN","MON","TUE","WED","THURS","FRI","SAT"];
+      var month = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEPT","OCT","NOV","DEC"]
+      var allTime = myDate.getHours() + ":" + myDate.getMinutes() + ":" +  myDate.getSeconds()
+      var allDate =   days[myDate.getDay()] + "  " + month + myDate.getDate() + "," + + "/" + myDate.getFullYear()
+      this.refNumber = Math.round(Math.random()*10000000000000000)
+      this.selfFundingHistory={
+        name: "PennyWise Bank",
+        account: this.accountNumber,
+        date:allDate,
+        time:allTime,
+        description:"Self Credit",
+        transferAmount:parseFloat(this.amountInputed),
+        status:"Successful",
+        referenceNumber:this.refNumber,
+        transactionType:'credit',
+        
+        
+
+      }
+   this.pennyWiseUsers[this.myUserIndex].myHistory.push(this.selfFundingHistory)
+     
       
       
       localStorage.setItem(
@@ -80,8 +106,7 @@ export class DashboardComponent implements OnInit {
       )
       this.ngOnInit();
       
-      alert(`Congratulations, 
-      ${this.amountInputed} has been added to your account successfully`  )
+     
 
       
     } 
@@ -91,6 +116,9 @@ export class DashboardComponent implements OnInit {
   transfer(){
     this.router.navigate(['/transfer'])
    
+  }
+  history(){
+    this.router.navigate(['/history'])
   }
   
  

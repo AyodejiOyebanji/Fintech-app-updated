@@ -43,7 +43,7 @@ export class TransferComponent implements OnInit {
     console.log(this.getSender);
     this.pennyWiseUsers=  localStorage['myBankUser'] ?JSON.parse(localStorage['myBankUser']) :[]
     this.myUserIndex= localStorage.getItem("indexOfUser")
-    this.pennyArray= this.pennyWiseUsers[this.myUserIndex]
+    this.pennyArray= this.pennyWiseUsers[this.myUserIndex]  
 
     this.getCurrentSender=JSON.parse(localStorage["currentUser"])
     this.tFund= this.pennyWiseUsers[this.myUserIndex].accountBal

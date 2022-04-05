@@ -1,0 +1,68 @@
+<section>
+    <h1  class="d-flex justify-content-center">Transaction History</h1>
+
+    <div class="container">
+        <div  class="row">
+            <div class="col-md-7 mx-auto">
+
+            </div>
+
+            <div class="his my-5 shadow " *ngFor="let each of userHistory;let i=index" >
+
+                <span>{{each.date}} {{each.time}}</span>  <span class="d-flex justify-content-end">NGN({{each.transferAmount}}.00)</span>
+                <p>FundSelf/{{each.referenceNumber}}  <span>
+
+
+                    <div class="d-flex justify-content-end">
+    
+                        <!-- for more -->
+                    
+                        <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Show More
+                      </button>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" role="dialog">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Transaction Details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Date: {{each.date}} </p>
+                              <p>Time: {{each.time}}</p>
+                              <p>Reference:{{each.referenceNumber}}</p>
+                              <p>Amount:{{each.transferAmount}} NGN</p>
+                              <p>Status:{{ each.status  }}</p>
+                              <p>Type:{{each.transactionType}}</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Download</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+
+
+                </span>
+                </p>
+                
+                
+                <hr class="hr">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</section>
